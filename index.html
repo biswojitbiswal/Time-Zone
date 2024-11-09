@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="timezone">
+        
+    <h1>Time Zone API</h1>
+    <h1>Your Current Time Zone</h1>
+    
+    <div class="timezone-container">
+        <p>Name Of Time Zone: <span id="timezone-name"></span></p>
+        <div class="lat-long">
+            <p>Lat: <span id="latitude"></span></p>
+            <p>Long: <span id="longitude"></span></p>
+        </div>
+        <p>Offset STD: <span id="offset-std"></span></p>
+        <p>Offset STD Second: <span id="offset-std-sec"></span></p>
+        <p>Offset DST: <span id="offset-dst"></span></p>
+        <p>Offset DST Second: <span id="offset-dst-sec"></span></p>
+        <p>Country: <span id="country"></span></p>
+        <p>Postcode: <span id="postcode"></span></p>
+        <p>City: <span id="city"></span></p>
+    </div>
+    <div class="address-timezone">
+        <h1>Enter Address</h1>
+        <form id="address-form">
+            <input type="text" name="user-address" id="user-address" placeholder="Address">
+            <button type="submit" id="address-submit">Submit</button>
+        </form>
+        <p id="address-error" style="color: red;"></p>
+        <div class="result-container" style="display: none;">
+            <h1 style="color: #fff;">Your Result</h1>
+            <div class="address-timezone-container">
+                <p>Name Of Time Zone: <span id="timezone-name-result"></span></p>
+                <div class="lat-long">
+                    <p>Lat: <span id="latitude-result"></span></p>
+                    <p>Long: <span id="longitude-result"></span></p>
+                </div>
+                <p>Offset STD: <span id="offset-std-result"></span></p>
+                <p>Offset STD Second: <span id="offset-std-sec-result"></span></p>
+                <p>Offset DST: <span id="offset-dst-result"></span></p>
+                <p>Offset DST Second: <span id="offset-dst-sec-result"></span></p>
+                <p>Country: <span id="country-result"></span></p>
+                <p>Postcode: <span id="postcode-result"></span></p>
+                <p>City: <span id="city-result"></span></p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
